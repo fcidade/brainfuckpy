@@ -10,7 +10,7 @@ class TestInterpreter(TestCase):
     def test_interpreter_resets_all_properties(self):
         self.interpreter.reset()
         
-        self.assertEqual(self.interpreter.ram.data, [0] * 1024)
+        self.assertEqual(self.interpreter.ram.data, [0] * 256 * 10)
         self.assertEqual(self.interpreter.stdout, '')
         self.assertEqual(self.interpreter.input_ptr, 0)
         self.assertEqual(self.interpreter.pc, 0)

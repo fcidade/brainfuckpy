@@ -13,7 +13,7 @@ class Brainfuck:
 
         logging.info("Interpreted: %s (%d chars)" % (interpreted, len(interpreted)))
         logging.info("RAM: %s" % str(self.interpreter.ram))
-        logging.info("Stack: %s" % ' '.join(self.interpreter.stack))
+        logging.info("Stack: %s" % ' '.join([str(x) for x in self.interpreter.stack]))
         logging.info("Program counter: %d" % self.interpreter.pc)
 
         return interpreted

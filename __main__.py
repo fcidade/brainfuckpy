@@ -12,7 +12,7 @@ args = arg_parser.parse_args()
 if args.log:
     setup_logs()
 
-input_: str = ' '.join(args.input)
+input_: str = ' '.join(args.input) if args.input else ''
 
 if args.source:
     logging.info('Loading from source: ' + args.source)

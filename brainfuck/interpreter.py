@@ -19,7 +19,7 @@ class Interpreter:
             Program Counter: Current token
             Stack: Stack of loop start indexes
         """
-        self.ram = Memory(1024)
+        self.ram = Memory(256 * 10)
         self.stdout = ''
         self.input_ptr = 0
         self.pc = 0

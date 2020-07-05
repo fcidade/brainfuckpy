@@ -20,4 +20,4 @@ class Parser:
 
     def remove_invalid_characters(self, code: str):
         """ Remove unused characters """
-        return re.sub(r'[^\+\-\>\<\[\]\,\.]', '', code)
+        return re.sub(r'[^\+\-><\[\],\.]', '', code)
