@@ -18,10 +18,10 @@ def repl(input_: str = ''):
     """)
     while True:
         try:
-            repl_code = input('>> ')
+            repl_code = input('Input: ')
             brain = Brainfuck()
             result = brain.run(repl_code, input_)
-            print(result)
+            print('Output:', result)
         except (EOFError, KeyboardInterrupt):
             print("...Exiting...")
             exit(0)
