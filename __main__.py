@@ -3,7 +3,7 @@ from util.logger import setup_logs
 from repl import repl
 import argparse, logging
 
-arg_parser = argparse.ArgumentParser(prog='brainfuck', description='Brainfuck VM')
+arg_parser = argparse.ArgumentParser(prog='bf', description='Brainfuck VM')
 arg_parser.add_argument('source', nargs='?', help='Source file')
 arg_parser.add_argument('--input', nargs='*', help='Input text')
 arg_parser.add_argument('--log', action='store_true', help='Display logs on stdout')
