@@ -1,2 +1,5 @@
 repl:
-	python3 bf.py
+	python3 .
+
+source:
+	python3 . $(ARGS)

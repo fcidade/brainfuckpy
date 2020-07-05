@@ -27,8 +27,6 @@ class Interpreter:
             
             self.behave(token.type)(input_)
             self.pc += 1
-            #import time
-            #time.sleep(1)
 
         return self.stdout
 

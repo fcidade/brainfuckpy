@@ -6,7 +6,7 @@ class Brainfuck:
         self.parser = Parser()
         self.interpreter = Interpreter()
 
-    def run(self, code: str):
+    def run(self, code: str) -> str:
 
         parsed = self.parser.parse(code)
         interpreted = self.interpreter.interpret(parsed)
@@ -15,3 +15,5 @@ class Brainfuck:
         logging.info("RAM: %s" % str(self.interpreter.ram))
         logging.info("Stack: %s" % ' '.join(self.interpreter.stack))
         logging.info("Program counter: %d" % self.interpreter.pc)
+
+        return interpreted

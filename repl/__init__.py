@@ -3,9 +3,10 @@ from brainfuck import Brainfuck
 def repl():
     while True:
         try:
-            code = input('> ')
-            b = Brainfuck()
-            b.run(code)
+            repl_code = input('> ')
+            brain = Brainfuck()
+            result = brain.run(repl_code)
+            print(result)
         except Exception as e:
             print(e)
             raise e
