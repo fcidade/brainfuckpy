@@ -3,7 +3,7 @@
 
 Yet another Brainfuck interpreter ¯_(ツ)_/¯
 
-![](header.png)
+![](doc/header.png)
 
 ## Usage
 
