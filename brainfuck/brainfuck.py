@@ -6,10 +6,10 @@ class Brainfuck:
         self.parser = Parser()
         self.interpreter = Interpreter()
 
-    def run(self, code: str) -> str:
+    def run(self, code: str, input_: str = '') -> str:
 
         parsed = self.parser.parse(code)
-        interpreted = self.interpreter.interpret(parsed)
+        interpreted = self.interpreter.interpret(parsed, input_)
 
         logging.info("Interpreted: %s (%d chars)" % (interpreted, len(interpreted)))
         logging.info("RAM: %s" % str(self.interpreter.ram))
