@@ -8,7 +8,7 @@ class Interpreter:
         self.reset()
 
     def reset(self):
-        self.ram = Memory(10)
+        self.ram = Memory(1024)
         self.stdout = ''
         self.input_ptr = 0
         self.pc = 0
