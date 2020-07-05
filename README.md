@@ -1,7 +1,7 @@
 # Brainfuckpy
 > A Brainfuck interpreter written in Python 3.
 
-Yet another Brainfuck interpreter ¯_(ツ)_/¯
+Yet another Brainfuck interpreter ¯\_(ツ)_/¯
 
 ![](doc/header.png)
 
